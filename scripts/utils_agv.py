@@ -61,7 +61,7 @@ def crear_tabla_resumen(df):
         tipo_dato = df[col].dtype
         cardinalidad = df[col].nunique()
 
-        if tipo_dato == 'object':  # or df[col].nunique() < 10: #muy pocos vaores únicos
+        if tipo_dato in ['object', 'string']:  # or df[col].nunique() < 10: #muy pocos vaores únicos
             categoria_dato = 'Categórica Nominal'
             if cardinalidad == 2:
                 categoria_dato = 'Binaria'
