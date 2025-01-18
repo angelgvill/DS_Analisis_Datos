@@ -176,6 +176,9 @@ cython_debug/
 *.html
 *.csv
 
+*.DS_Store
+.DS_Store/
+
 test.txt
 *.docx
 no_mostrar/
